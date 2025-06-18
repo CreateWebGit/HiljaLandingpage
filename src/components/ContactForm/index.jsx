@@ -47,7 +47,9 @@ const ContactForm = () => {
         </header>
         <section className="cw-grid py-4 py-xs-4">
             <div className="cw-col-12 cw-col-xs-12">
-                <div className="form-image-container"></div>
+                <div className="form-image-container">
+                    <img src="/form_ad_image_1.jpg" alt="skåpbil på väg"/>
+                </div>
                 <h1 className="mt-2 text-center">Midsommarfrakten blev inte som du tänkt?</h1>
                 <h2 className="h5 text-center" style={{marginTop: '0.5rem'}}>Vi hjälper dig få ordning på logistiken – resten av sommaren.</h2>
                 <p className="mt-4">
