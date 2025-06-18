@@ -24,6 +24,15 @@ header {
     .top-container {
         height: 3rem;
         background-color: var(--blue-bright);
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+        font-size: 0.75rem;
+        color: white;
+
+        a {
+            color: white;
+        }
     }
 
     .bottom-container {
@@ -39,4 +48,10 @@ header {
     width: 100%;
     background-color: #d9d9d9;
     border-radius: 0.5rem;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }

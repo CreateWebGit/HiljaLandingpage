@@ -37,7 +37,9 @@ const ContactForm = () => {
         <>
         <header>
             <div className="top-container">
-                <p>Fyll i formuläret nedan så & få en gratis konsultation!</p>
+                <a href="#form">
+                    <p>Fyll i formuläret nedan & få en gratis konsultation!</p>
+                </a>
             </div>
             <div className="bottom-container">
                 <img src="/hilja+fraktjakt.svg"/>
@@ -59,7 +61,7 @@ const ContactForm = () => {
                 </p>
             </div>
         </section>
-        <div className={style.container}>
+        <div id="form" className={style.container}>
             <form className="cw-grid gap-1 pb-4 pb-xs-4" onSubmit={handleSubmit}>
                 <div className="cw-col-6 cw-col-xs-12">
                     <input
