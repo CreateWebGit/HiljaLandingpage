@@ -1,0 +1,56 @@
+@use "./variables.scss" as *;
+@use "./cw_grid.scss" as *;
+@use "./sections.scss" as *;
+@use "./utilities.scss" as *;
+@use "./typo.scss" as *;
+
+html {
+  transition: color-scheme 0.2s ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  font-size: 16px;
+
+  @media (min-width: 1920px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 864px) {
+    font-size: 1.85vw;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    touch-action: pan-y;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--bw);
+  font-family: "Inter Display";
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-right: 2px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
