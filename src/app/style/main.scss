@@ -3,6 +3,7 @@
 @use "./sections.scss" as *;
 @use "./utilities.scss" as *;
 @use "./typo.scss" as *;
+@use "./cookienotice.scss" as *;
 
 html {
   transition: color-scheme 0.2s ease;

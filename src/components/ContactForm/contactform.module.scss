@@ -1,4 +1,6 @@
 .container {
+    max-width: 50rem;
+    margin: auto;
     form {
         max-width: 50rem;
         margin: auto;
@@ -8,16 +10,17 @@
         }
 
         input:not(:last-of-type) {
-            margin-bottom: 1rem
+            margin-bottom: 1rem;
         }
-        
-        input, textarea {
+
+        input,
+        textarea {
             width: 100%;
             padding: 1rem;
             appearance: none;
             border: none;
             background: white;
-            font-family: 'Inter Display';
+            font-family: "Inter Display";
             font-weight: 500;
             border-radius: 0.5rem;
             border: 1px solid #e3e3e3;
@@ -41,7 +44,7 @@
             background-color: var(--blue-bright);
             color: #fff;
             margin: auto;
-            font-family: 'Inter Display';
+            font-family: "Inter Display";
             font-size: 1rem;
             border: none;
             font-weight: 600;
@@ -54,7 +57,10 @@
             &:hover {
                 background-color: var(--blue-dark);
             }
-
         }
+    }
+
+    .messageSent {
+        margin-bottom: 50px;
     }
 }

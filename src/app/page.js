@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Cookienotice from '@/components/Cookienotice'
 
 import { Resend } from "resend";
 import ContactForm from "@/components/ContactForm";
@@ -24,6 +25,7 @@ export default function Home() {
     return (
         <div>
             <ContactForm />
+            <Cookienotice/>
         </div>
     );
 }

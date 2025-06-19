@@ -21,7 +21,7 @@ export const EmailTemplateCustomer = ({
         <Tailwind>
             <Text style={{ whiteSpace: "pre-line" }} className="">
                 {name} från företaget {company} har visat sitt intresse för
-                Hilja Logistic.
+                Hilja Logistics.
             </Text>
             <Text style={{ whiteSpace: "pre-line" }} className="">
                 {name}s kontaktuppgifter är: {"\n"}

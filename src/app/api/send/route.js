@@ -8,10 +8,9 @@ export async function POST(req, res) {
     console.log("my req", name);
     try {
         const { data, error } = await resend.emails.send({
-            from: "Post från webben <onboarding@updates.createweb.se>",
-
-            to: ["kaj@createweb.se"],
-            subject: "Intresseanmälan - Hilja Logistic",
+            from: "Kampanj - Post <onboarding@updates.createweb.se>",
+            to: ["hilja@hiljalogistics.se"],
+            subject: "Intresseanmälan - Hilja Logistics",
             react: EmailTemplateCustomer({
                 name: name,
                 company: company,
