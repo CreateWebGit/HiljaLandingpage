@@ -153,11 +153,14 @@ const ContactForm = () => {
                                         message: e.target.value,
                                     })
                                 }
-                                className="cw-col-12 cw-col-xs-12"
+                                className="cw-col-12 cw-col-xs-12 mb-2"
                             />
                             <button className="cw-col-12 cw-col-xs-12">
-                                Skicka
+                                Ja, kontakta mig!
                             </button>
+                            <p className="cw-col-12 cw-col-xs-12 notice mb-5">
+                                Genom att skicka detta formulär godkänner du att vi lagrar och <br/> behandlar dina personuppgifter i enlighet med vår <a href="/integritetspolicy">integritetspolicy</a>.
+                            </p>
                         </form>
                     </div>
                 ) : (
