@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import style from "./contactform.module.scss";
+import { sendGAEvent } from '@next/third-parties/google'
 
 const ContactForm = () => {
     const [isFormSent, setFormSent] = useState(false);
@@ -32,7 +33,8 @@ const ContactForm = () => {
 
         const result = await responce.json();
 
-        console.log("Responce", result);
+        console.log("Responce", result)
+        sendGAEvent('event', 'form_submit', { value: 'true' })
         setFormSent(true);
     };
     return (

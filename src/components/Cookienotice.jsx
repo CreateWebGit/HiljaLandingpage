@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { sendGAEvent } from '@next/third-parties/google'
 
 export default function Cookienotice() {
     const [isVisible, setIsVisible] = useState(false);
@@ -14,6 +15,7 @@ export default function Cookienotice() {
 
     const acceptCookies = () => {
         localStorage.setItem("cw_accepted_cookies", "true");
+        sendGAEvent('event', 'accepted_cookies', { value: 'true' })
         setIsVisible(false);
     };
 
